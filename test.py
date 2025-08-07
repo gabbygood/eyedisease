@@ -4,7 +4,7 @@ import tensorflow as tf
 from PIL import Image
 
 
-H5_MODEL_PATH = "eyediseasemodel.tflite"
+H5_MODEL_PATH = "eyediseasemodel.h5"
 
 @st.cache_resource
 def load_model():
