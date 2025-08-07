@@ -3,8 +3,8 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image
 
-# Load Keras H5 Model
-H5_MODEL_PATH = "eyediseasemodel.h5"
+
+H5_MODEL_PATH = "eyediseasemodel.tflite"
 
 @st.cache_resource
 def load_model():
@@ -12,12 +12,12 @@ def load_model():
 
 model = load_model()
 
-# Class Names (same as before)
+
 CLASS_NAMES = [
     'Cataract', 'diabetic_retinopathy', 'glaucoma', 'normal'
 ]
 
-# Preprocess Image
+
 def preprocess_image(image):
     """Convert image to RGB, resize, normalize, and prepare for model input."""
     img = image.convert("RGB")

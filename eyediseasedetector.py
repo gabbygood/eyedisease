@@ -18,7 +18,7 @@ app.add_middleware(
 )
 
 # Load TFLite Model
-TFLITE_MODEL_PATH = "lettuce_lite_model.tflite"
+TFLITE_MODEL_PATH = "eyediseasemodel.tflite"
 
 print(tf.__version__)
 print(np.__version__)
